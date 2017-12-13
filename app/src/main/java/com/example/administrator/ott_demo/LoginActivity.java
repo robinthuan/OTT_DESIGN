@@ -24,10 +24,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.login:
+                startActivity(new Intent(LoginActivity.this,HomeActivity.class));
                 break;
             case R.id.register:
                 startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
                 break;
+            case R.id.forgot_password:
+                startActivity(new Intent(LoginActivity.this,ForgotActivity.class));
                 default:break;
         }
     }

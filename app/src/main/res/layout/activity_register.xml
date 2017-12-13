@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:background="@color/orange"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <TextView
+        android:textSize="15dp"
+        android:textColor="@color/color_text_button"
+        android:text="Register Account"
+        android:paddingLeft="20dp"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="15dp"
+        android:text="Email(*)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="Your Email"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Password(*)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:inputType="textPassword"
+            android:paddingLeft="5dp"
+            android:hint="Password"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Confirm Password(*)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:inputType="textPassword"
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="First Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="First Name"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Last Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="Last Name"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Sex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_weight="1"
+                android:text="Male"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_weight="1"
+                android:text="Female"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:layout_weight="1"
+                android:text="Other"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Date Of Birth "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="Your birthday"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="Country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:theme="@style/CustomActivatedColor"
+            android:paddingLeft="5dp"
+            android:hint="Your Country"
+            android:textColorHint="@color/edittext_nomal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/act_register"
+            android:textSize="17sp"
+            android:layout_marginTop="15dp"
+            android:text="REGISTER"
+            android:textAlignment="center"
+            android:textColor="#f6f2ef"
+            android:background="@drawable/button"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

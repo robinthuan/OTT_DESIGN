@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@drawable/dialog"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:background="@color/orange"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:textColor="@color/color_text_button"
+                android:text="Edit SIP Account"
+                android:paddingLeft="20dp"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_marginTop="15dp"
+                android:text="Sip Display Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/edittext_nomal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Sip Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/edittext_nomal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Sip Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:paddingLeft="5dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Sip Domain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/edittext_nomal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+              <CheckBox
+
+                  android:text="Use TCP (not UDP)"
+                  android:theme="@style/CustomActivatedColor"
+                  android:textColor="@color/edittext_nomal"
+                  android:paddingLeft="5dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content" />
+            <CheckBox
+                android:theme="@style/CustomActivatedColor"
+                android:textColor="@color/edittext_nomal"
+                android:text="Proxy"
+                android:paddingLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="10dp"
+                android:text="Sip Proxy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:theme="@style/CustomActivatedColor"
+                android:paddingLeft="5dp"
+                android:textColorHint="@color/edittext_nomal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp">
+                <Button
+                    android:id="@+id/update"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="UPDATE"
+                    android:textAlignment="center"
+                    android:textColor="#f6f2ef"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+                <Button
+                    android:id="@+id/cancle"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:text="CANCEL"
+                    android:textAlignment="center"
+                    android:textColor="#f6f2ef"
+                    android:background="@drawable/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>

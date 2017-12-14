@@ -2,6 +2,7 @@ package com.example.administrator.ott_demo;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,11 +20,21 @@ public class RegisterActivity extends AppCompatActivity {
            @Override
            public void onClick(View view) {
              final  Dialog dialog=new Dialog(context);
+
               if(dialog!=null) {
                   dialog.setContentView(R.layout.custom_dialog);
                   dialog.setTitle("11111");
+                  dialog.setCanceledOnTouchOutside(false);
                   dialog.show();
               }
+               Button buttonOK=(Button)dialog.findViewById(R.id.ok);
+              buttonOK.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View view) {
+                      dialog.dismiss();
+                      startActivity(new Intent(RegisterActivity.this,AccountForSIPActivity.class));
+                  }
+              });
 
            }
        });
